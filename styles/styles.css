@@ -148,6 +148,7 @@ img {
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
+  color: var(--paragraf-tex-color);
 }
 
 .header-tel {
@@ -159,6 +160,18 @@ img {
   padding-top: 32px;
   display: inline-block;
   padding-bottom: 32px;
+  color: var(--paragraf-tex-color);
+}
+
+.link-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+.header-tel:hover .link-icon,
+.header-tel:focus .link-icon,
+.header-mail:hover .link-icon,
+.header-mail:focus .link-icon {
+  fill: var(--accent-color);
 }
 
 .header-list:hover,
@@ -179,6 +192,14 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .hero-title {
@@ -248,6 +269,29 @@ img {
   width: 270px;
 }
 
+.icon-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.icon-item {
+  width: calc((100% - 90px) / 3);
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bac-our-color);
+}
+
+.image-icon {
+  width: 70px;
+  height: 70px;
+  fill: var(--header-list-color);
+}
+
 /* -------section-do------- */
 
 .image-item {
@@ -296,8 +340,12 @@ img {
   margin-bottom: 50px;
 }
 .containar-tex {
-  padding-top: 30px;
   padding-bottom: 30px;
+  background: var(--bac-tex-color);
+  /* material shadow v1 */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .name-title {
   font-weight: 500;
@@ -316,6 +364,94 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--paragraf-tex-color);
+  margin-bottom: 16px;
+}
+
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.team-soc-item {
+  width: 44px;
+  height: 44px;
+}
+
+.team-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bac-tex-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-soc-icon {
+  fill: #afb1b8;
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: var(--accent-color);
+}
+
+.team-soc-link:hover .team-soc-icon,
+.team-soc-link:focus .team-soc-icon {
+  fill: var(--bac-tex-color);
+}
+
+/* -------regular-customers------- */
+
+.regular-customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.customers-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.customers-soc-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.customers-soc-item {
+  width: calc((100% - 150px) / 6);
+  height: 90px;
+}
+
+.customers-soc-linc {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+}
+
+.customers-soc-icon {
+  fill: currentColor;
+}
+
+.customers-soc-linc:hover .customers-soc-icon,
+.customers-soc-linc:focus .customers-soc-icon {
+  fill: var(--accent-color);
+}
+
+.customers-soc-linc:hover,
+.customers-soc-linc:focus {
+  border: 1px solid var(--accent-color);
 }
 
 /* -------footer-site------- */
@@ -367,6 +503,14 @@ img {
   letter-spacing: 0.03em;
   color: var(--footer-linc-color);
 }
+.container-link {
+  display: flex;
+  align-items: baseline;
+}
+
+.container-contacts {
+  margin-right: 70px;
+}
 
 .footer-tel:hover,
 .footer-tel:focus,
@@ -376,6 +520,59 @@ img {
 .contacts-map-linc:focus {
   color: var(--accent-color);
 }
+
+.footer-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.footer-title-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--bac-tex-color);
+  margin-left: 156px;
+  margin-bottom: 20px;
+}
+
+.footer-soc-list {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-soc-item {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  display: inline-block;
+}
+
+.footer-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bac-tex-color);
+}
+
+.footer-soc-icon {
+  fill: currentColor;
+}
+.footer-soc-link:hover .footer-soc-icon,
+.footer-soc-link:focus .footer-soc-icon {
+  fill: var(--accent-color);
+  fill: var(--bac-tex-color);
+}
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--accent-color);
+}
+
 /* -------portfolio------- */
 
 .section-filters {
@@ -391,10 +588,6 @@ img {
 
 .filters-btn {
   background: var(--bac-our-color);
-  border-radius: 4px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  padding: 6px 22px;
 }
 
 .p-btn {
@@ -408,12 +601,16 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-list-color);
+  border-radius: 4px;
+  padding: 6px 22px;
 }
 
 .filters-btn:focus,
 .filters-btn:hover {
   background-color: var(--accent-color);
   color: var(--bac-tex-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-list {
@@ -426,15 +623,16 @@ img {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .img-item {
   background-color: var(--bac-tex-color);
-}
-
-.tex-img {
-  padding: top 20px;
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eeeeee;
+  border-top: transparent;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .title-img {
@@ -448,9 +646,10 @@ img {
 }
 
 .title-img-tex {
-  padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: transparent;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .img-tex {
@@ -463,4 +662,8 @@ img {
 
 .border-line {
   border-bottom: 1px solid #ececec;
+}
+
+.tex-padding {
+  padding: 20px 24px;
 }

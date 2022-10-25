@@ -44,13 +44,19 @@
         <ul class="contacts list">
           <li class="header-item">
             <a class="header-mail link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+              ><svg class="link-icon" width="16" height="12">
+                <use href="./images/icons-svg.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="header-item">
             <a class="header-tel link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
+              ><svg class="link-icon" width="10" height="16">
+                <use href="./images/icons-svg.svg#icon-Vector"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
       </div>
@@ -85,7 +91,7 @@
                   width="370"
                   height="294"
                 />
-                <div class="title-img-tex">
+                <div class="tex-padding">
                   <h2 class="title-img">Технокряк</h2>
                   <p class="img-tex">Веб-сайт</p>
                 </div>
@@ -99,7 +105,7 @@
                   width="370"
                   height="294"
                 />
-                <div class="title-img-tex">
+                <div class="tex-padding">
                   <h2 class="title-img">Постер new orlean vs golden star</h2>
                   <p class="img-tex">Дизайн</p>
                 </div>
@@ -113,7 +119,7 @@
                   width="370"
                   height="294"
                 />
-                <div class="title-img-tex">
+                <div class="tex-padding">
                   <h2 class="title-img">Ресторан seafood</h2>
                   <p class="img-tex">Додаток</p>
                 </div>
@@ -127,7 +133,7 @@
                   width="370"
                   height="294"
                 />
-                <div class="title-img-tex">
+                <div class="tex-padding">
                   <h2 class="title-img">Проєкт prime</h2>
                   <p class="img-tex">Маркетинг</p>
                 </div>
@@ -141,7 +147,7 @@
                   width="370"
                   height="294"
                 />
-                <div class="title-img-tex">
+                <div class="tex-padding">
                   <h2 class="title-img">Проєкт boxes</h2>
                   <p class="img-tex">Додаток</p>
                 </div>
@@ -155,7 +161,7 @@
                   width="370"
                   height="294"
                 />
-                <div class="title-img-tex">
+                <div class="tex-padding">
                   <h2 class="title-img">Inspiration has no orders</h2>
                   <p class="img-tex">Веб-сайт</p>
                 </div>
@@ -169,7 +175,7 @@
                   width="370"
                   height="294"
                 />
-                <div class="title-img-tex">
+                <div class="tex-padding">
                   <h2 class="title-img">Видання limited edition</h2>
                   <p class="img-tex">Дизайн</p>
                 </div>
@@ -183,7 +189,7 @@
                   width="370"
                   height="294"
                 />
-                <div class="title-img-tex">
+                <div class="tex-padding">
                   <h2 class="title-img">Проєкт lab</h2>
                   <p class="img-tex">Маркетинг</p>
                 </div>
@@ -197,7 +203,7 @@
                   width="370"
                   height="294"
                 />
-                <div class="title-img-tex">
+                <div class="tex-padding">
                   <h2 class="title-img">Growing business</h2>
                   <p class="img-tex">Додаток</p>
                 </div>
@@ -209,32 +215,91 @@
     </main>
     <footer class="footer-site">
       <div class="container">
-        <a class="footer-logo link" href="./index.html">
-          <span class="web">Web</span><span class="span-studio">Studio</span>
-        </a>
-        <address class="addres-contacts">
-          <ul class="contacts-list list">
-            <li class="contacts-item">
-              <a
-                class="contacts-map-linc link"
-                href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                >м. Київ, пр-т Лесі Українки, 26</a
-              >
-            </li>
-            <li class="contacts-item">
-              <a class="footer-mail link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="contacts-item">
-              <a class="footer-tel link" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
+        <div class="footer-logo-container">
+          <a class="footer-logo link" href="./index.html">
+            <span class="web">Web</span><span class="span-studio">Studio</span>
+          </a>
+          <h2 class="footer-title-link">приєднуйтесь</h2>
+        </div>
+        <div class="container-link">
+          <div class="container-contacts">
+            <address class="addres-contacts">
+              <ul class="contacts-list list">
+                <li class="contacts-item">
+                  <a
+                    class="contacts-map-linc link"
+                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="contacts-item">
+                  <a class="footer-mail link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="contacts-item">
+                  <a class="footer-tel link" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="container-soc">
+            <ul class="footer-soc-list list">
+              <li class="footer-soc-item">
+                <a
+                  href=""
+                  class="footer-soc-link link"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/icons-svg.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a
+                  href=""
+                  class="footer-soc-link link"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/icons-svg.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a
+                  href=""
+                  class="footer-soc-link link"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/icons-svg.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a
+                  href=""
+                  class="footer-soc-link link"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/icons-svg.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
